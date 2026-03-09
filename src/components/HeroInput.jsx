@@ -10,7 +10,7 @@ export function HeroInput({ value, onChange, onSubmit, disabled }) {
       className="w-full max-w-4xl rounded-3xl border border-gold/10 bg-card p-6 shadow-glow backdrop-blur-xl md:p-10"
     >
       <h1 className="text-center text-5xl font-bold tracking-tight text-pearl md:text-7xl">
-        OilCanvas
+        Shelart
       </h1>
       <p className="mt-4 text-center text-lg font-medium text-pearl/80 md:text-xl">
         Your words. Masterpiece canvas.

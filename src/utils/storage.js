@@ -1,5 +1,5 @@
-const LOCAL_STORAGE_KEY = 'oilcanvas:history:v1';
-const DB_NAME = 'oilcanvas-db';
+const LOCAL_STORAGE_KEY = 'shelart:history:v1';
+const DB_NAME = 'shelart-db';
 const DB_VERSION = 1;
 const STORE_NAME = 'artworks';
 const MAX_ARTWORKS = 12;

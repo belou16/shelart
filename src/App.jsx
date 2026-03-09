@@ -83,7 +83,7 @@ function App() {
 
     const link = document.createElement('a');
     link.href = URL.createObjectURL(blob);
-    link.download = `oilcanvas-${activeId}.png`;
+    link.download = `shelart-${activeId}.png`;
     link.click();
     URL.revokeObjectURL(link.href);
   }

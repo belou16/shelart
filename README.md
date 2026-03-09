@@ -1,4 +1,4 @@
-# OilCanvas - Text to Oil Painting AI
+# Shelart - Text to Oil Painting AI
 
 **Tagline:** Your words. Masterpiece canvas.
 
@@ -71,7 +71,7 @@ No payments. No subscriptions.
 	- `VITE_HUGGINGFACE_API_KEY`
 4. Click Deploy.
 
-Done. Example target domain: `oilcanvas.vercel.app`
+Done. Example target domain: `shelart.vercel.app`
 
 `vercel.json` is included for Vite framework detection.
 
@@ -83,8 +83,8 @@ Done. Example target domain: `oilcanvas.vercel.app`
 
 ## Domain + Brand
 
-- Product: OilCanvas
-- Domain idea: `oilcanvas.app`
+- Product: Shelart
+- Domain idea: `shelart.app`
 - Favicon: golden brush stroke on black (`public/favicon.svg`)
 
 ## Scripts
