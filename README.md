@@ -41,6 +41,8 @@ npm install && npm run dev
 - Apple-inspired dark UI with gold accent and glass cards
 - Installable PWA manifest
 
+The app calls a local backend route (`/api/generate`) so your key stays server-side.
+
 ## Free AI Integration
 
 - Provider: Hugging Face Inference API (free tier)
@@ -69,6 +71,7 @@ No payments. No subscriptions.
 2. Import project in Vercel.
 3. Add env var in Vercel project settings:
 	- `VITE_HUGGINGFACE_API_KEY`
+	- Optional alias: `HUGGINGFACE_API_KEY`
 4. Click Deploy.
 
 Done. Example target domain: `shelart.vercel.app`
