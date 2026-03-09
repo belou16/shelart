@@ -22,6 +22,13 @@ function App() {
   const [search, setSearch] = useState('');
   const [shownCount, setShownCount] = useState(6);
 
+  function scrollToResult() {
+    document.getElementById('result-section')?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start'
+    });
+  }
+
   useEffect(() => {
     let mounted = true;
     loadHistory().then((items) => {
@@ -56,6 +63,7 @@ function App() {
     event.preventDefault();
     setError('');
     setIsGenerating(true);
+    scrollToResult();
 
     try {
       const blob = await generateOilPainting(prompt);
@@ -71,6 +79,7 @@ function App() {
       setPrompt('');
     } catch (err) {
       setError(err.message || 'Failed to generate artwork.');
+      scrollToResult();
     } finally {
       setIsGenerating(false);
     }
@@ -122,7 +131,13 @@ function App() {
           </div>
         </section>
 
-        <div className="space-y-8">
+        <div id="result-section" className="space-y-8">
+          {!activeArtwork && !isGenerating && !error && (
+            <div className="rounded-2xl border border-gold/10 bg-card px-5 py-4 text-sm text-pearl/70 backdrop-blur-xl">
+              Your generated painting will appear here.
+            </div>
+          )}
+
           {isGenerating && <LoadingSkeleton />}
 
           {activeArtwork && !isGenerating && (
